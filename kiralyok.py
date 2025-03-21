@@ -21,7 +21,7 @@ for uralkodo in cursor:
     print (uralkodo)
 print ("-------")    
 
-cursor.execute("SELECT * FROM uralkodo WHERE nev = 'I. Mátyás'")
+cursor.execute("SELECT szul, hal FROM uralkodo WHERE nev = 'I. Mátyás'")
 for uralkodo in cursor:
     print (f"Mátyás király élt: {uralkodo [0]} - {uralkodo[1]}")
 print ("-------")    
