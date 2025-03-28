@@ -32,15 +32,6 @@ for x in mycursor:
 
 mycursor = mydb.cursor()
 
-import mysql.connector
-
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="yourusername",
-  password="yourpassword",
-  database="mydatabase"
-)
-
 mycursor = mydb.cursor()
 
 sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
